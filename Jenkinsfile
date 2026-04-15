@@ -8,7 +8,7 @@ pipeline {
 
     stages {
 
-        stage('Checkout1') {
+        stage('Checkout') {
             steps {
                 git 'https://github.com/shinde124dinu-Demo/maven-app.git'
             }
