@@ -11,7 +11,7 @@
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-api</artifactId>
-      <version>6.0.3</version>
+      <version>6.0.3-SNAPSHOT</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
@@ -73,9 +73,12 @@
     </plugins>
   </build>
   <distributionManagement>
+    <snapshotRepository>
+        <id>nexus</id>
+        <url>http://135.235.153.38:8081/repository/maven-snapshot/</url>
+    </snapshotRepository>
     <repository>
         <id>nexus</id>
-        <name>nexus-releases</name>
         <url>http://135.235.153.38:8081/repository/maven-release/</url>
     </repository>
 </distributionManagement>
